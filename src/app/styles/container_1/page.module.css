@@ -1,0 +1,30 @@
+.Container_1_Principal {
+  width: 100%;
+  background-color: gray;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  height: 250px;
+  color: white;
+  padding-right: 160px;
+}
+.Container_1_Principal > * {
+  height: 30px;
+  width: 130px;
+  font-size: 15px;
+}
+
+.Image {
+  height: 250px;
+  width: 250px;
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+.registrationDiv {
+  display: grid;
+  background-color: white;
+  color: black;
+  height: 240px;
+  width: 250px;
+}/*# sourceMappingURL=page.module.css.map */

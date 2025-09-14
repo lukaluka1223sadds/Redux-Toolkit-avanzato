@@ -1,0 +1,34 @@
+.divCard{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 220px;
+    grid-template-rows: repeat(5 , 70px);
+    color: wheat;
+    font-size: 14px;
+    row-gap: 70px;
+}
+
+.Container3Div{
+    grid-column: 1 / 3;
+    display: grid ;
+    width: 100%;
+    grid-template-columns: repeat(5 , 220px);
+    justify-content: space-evenly;
+    background-color: #cdcdcd;
+    height: 375px;
+    padding-top: 15px;
+
+}
+
+.InputText{
+    & ol li input {
+        background-color: #506d96;
+        border: 0;
+        color: wheat;
+    }
+}
+
+.ol{
+    margin-left: 20px;
+}
