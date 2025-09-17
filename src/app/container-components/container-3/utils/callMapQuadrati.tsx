@@ -6,10 +6,10 @@ import { Card } from "@/app/reusable-Components/Card";
 import { toDoList } from "@/app/common/interfaces/container-1/reduxToolkit";
 import styles from "@/app/styles/container_3/page.module.css";
 
-export function MapQuadrati() {
+export function CreateTaskContainer() {
   const toDoListData: toDoList[] = useSelector((state: RootState) => state?.ToDoCards);
   const Items = toDoListData.filter((e) => e.Id !== "");
-
+  
   return (
     <>
       {Items.map((lastItemArray) => (
@@ -23,9 +23,8 @@ export function MapQuadrati() {
             <p><b>NAME ITEM :</b> {lastItemArray?.nameItem}
             <br />
             <br />
-            <b>GIORNI DELLA SETTIMANA : </b>{lastItemArray?.daysOfWeek.join(', ')}
+            <b>GIORNI DELLA SETTIMANA : </b> {lastItemArray.daysOfWeek?.join(' ') || ''}
             <br />
-            
             <br />
             <b>URGENTE : </b>{lastItemArray?.DefinitelyDoable}</p>
             <div className={styles.InputText}>
@@ -36,7 +35,6 @@ export function MapQuadrati() {
                   <b><input type="text" /></b>
                 </li>
                 <br />
-               
                 <li>
                 <b><input type="text" /></b>
                 </li>

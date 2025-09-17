@@ -2,7 +2,7 @@ import { toDoList } from "@/app/common/interfaces/container-1/reduxToolkit";
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { addCase } from "../Slice3/ToDoCards";
 
-export const checkToDoList = createAsyncThunk("/api/checkToDoList" , async (props:toDoList, thunkAPI)=> {
+export const checkToDoList = createAsyncThunk("/api/checkToDoList" , async (props:toDoList , thunkAPI)=> {
    const params = new URLSearchParams({
       nameItem: props.nameItem,
       daysOfWeek: JSON.stringify(props.daysOfWeek),

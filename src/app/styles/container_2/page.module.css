@@ -25,4 +25,9 @@
 .input {
   height: 35px;
   width: 400px;
+}
+
+.deletePage {
+  background-color: rgb(73, 6, 6);
+  height: 100%;
 }/*# sourceMappingURL=page.module.css.map */

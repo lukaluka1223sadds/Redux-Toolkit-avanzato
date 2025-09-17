@@ -8,8 +8,11 @@ const ToDoCards = createSlice({
     initialState,
     reducers:{
         addCase(state,action:PayloadAction<toDoList>){
-            state.push(action.payload)
-            return state
+            if (state.length < 5) {
+                state.push(action.payload);
+            } else {
+                alert("array of tasks is full !!!");
+            }
         },
         RemoveCase(state,action:PayloadAction<string>){
               return state.filter(item => item.Id !== action.payload);

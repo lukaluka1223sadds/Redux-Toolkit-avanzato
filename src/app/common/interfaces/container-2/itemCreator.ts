@@ -5,7 +5,7 @@ import { toDoList } from "../container-1/reduxToolkit";
 
 export interface ICreateItems {
     currentType: string,
-    checkedBox: string[],
+    daysOfWeek: string[],
     DefinitelyDoable: boolean,
     setCurrentType: Dispatch<SetStateAction<string>>,
     dispatch: AppDispatch,

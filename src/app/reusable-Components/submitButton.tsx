@@ -6,7 +6,7 @@ export default function SubmitButton({
   value?: string;
 }) {
   return (
-    <button type="button" onClick={onClickItem}>
+    <button type="button" onClick={onClickItem} >
       {value}
     </button>
   );
